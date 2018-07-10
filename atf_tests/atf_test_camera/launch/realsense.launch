@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<launch>
+    <!-- launch realsense -->
+    <include file="$(find realsense_camera)/launch/r200_nodelet_default.launch" />	
+</launch>

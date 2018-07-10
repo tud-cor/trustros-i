@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<launch>
+    <!-- launch ensenso -->
+    <node name="ensenso_camera_node" pkg="ensenso_camera" type="ensenso_camera_node" />
+    <node name="ensenso_image_stream" pkg="ensenso_camera" type="image_stream">
+        <param name="rate" value="5.45"/>
+    </node>
+</launch>

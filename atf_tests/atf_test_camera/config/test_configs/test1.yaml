@@ -1,0 +1,7 @@
+get_data:
+  interface:
+    - node: ensenso_image_stream
+      publishers: 
+        - [/image, sensor_msgs/Image]
+  publish_rate:
+    - topic: /image

@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<launch>
+    <!-- https://answers.ros.org/question/196586/how-do-i-disable-execution_duration_monitoring/ -->
+    <param name="move_group/trajectory_execution/allowed_execution_duration_scaling" value="4.0" />
+    <param name="move_group/trajectory_execution/execution_duration_monitoring" value="false" />
+
+    <!-- launch abb -->
+    <include file="$(find abb_irb1600_6_12_moveit_config)/launch/moveit_planning_execution.launch">
+        <arg name="robot_ip" value="192.168.0.90" />
+        <arg name="sim" value="false" />
+    </include>
+</launch>

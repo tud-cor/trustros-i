@@ -1,0 +1,32 @@
+initialize:
+  time: []
+  path_length:
+    - root_frame: base_link
+      measured_frame: link_6
+move_down:
+  time: []
+  path_length:
+    - root_frame: base_link
+      measured_frame: link_6
+move_left:
+  path_length:
+    - root_frame: base_link
+      measured_frame: link_6
+  time: []
+move_right:
+  path_length:
+    - root_frame: base_link
+      measured_frame: link_6
+  time: []
+move_up:
+  path_length:
+    - root_frame: base_link
+      measured_frame: link_6
+  time: []
+full_test:
+  path_length:
+    - root_frame: base_link
+      measured_frame: link_6
+  time: []
+
+
